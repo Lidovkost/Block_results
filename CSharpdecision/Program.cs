@@ -11,38 +11,38 @@ string[] CreateAraay(int arraySize)
 }
 void EnterArrayElements(string[] array)
 {
-   for(int i = 0; i<array.Length; i++)
+    for (int i = 0; i < array.Length; i++)
     {
-        Console.WriteLine($"Введите {i+1}-й элемент");
-        array[i] =Console.ReadLine();
+        Console.WriteLine($"Введите {i + 1}-й элемент");
+        array[i] = Console.ReadLine();
     }
-    
+
 }
 int NumberElementsLengthLess4(string[] array)
 {
-   int k = 0;
-   for(int i = 0; i<array.Length; i++)
+    int k = 0;
+    for (int i = 0; i < array.Length; i++)
     {
-        if(array[i].Length<4) k++;        
-    } 
+        if (array[i].Length < 4) k++;
+    }
     return k;
 }
 void FillArrayElementLengthLess4(string[] arrayFinal, string[] arraySource)
 {
     int k = 0;
-    for(int i = 0; i<arraySource.Length; i++)
+    for (int i = 0; i < arraySource.Length; i++)
     {
-        if(arraySource[i].Length<4)
+        if (arraySource[i].Length < 4)
         {
             arrayFinal[k] = arraySource[i];
             k++;
-        }        
-    } 
+        }
+    }
 
 }
-void PrintArray(string[]array)
+void PrintArray(string[] array)
 {
-    for(int i = 0; i<array.Length; i++)
+    for (int i = 0; i < array.Length; i++)
     {
         Console.Write($"{array[i]} ");
     }
